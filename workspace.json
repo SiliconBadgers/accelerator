@@ -1,0 +1,137 @@
+{
+  "schema": 1,
+  "mode": "sibling-workspace",
+  "description": "Team charters and optional examples in separate repositories. The runner consumes current sibling checkout files; members choose their work.",
+  "components": {
+    "architecture": {
+      "owner_role": "Architecture and system direction",
+      "status": "working-starter",
+      "required_files": [
+        "README.md",
+        "Makefile",
+        "contracts/mac-v0.json",
+        "CHARTER.md",
+        "OBJECTIVES.md",
+        "SETUP.md"
+      ]
+    },
+    "rtl-compute": {
+      "owner_role": "Compute datapaths",
+      "status": "working-starter",
+      "required_files": [
+        "README.md",
+        "Makefile",
+        "rtl/pe_mac.sv",
+        "CHARTER.md",
+        "OBJECTIVES.md",
+        "SETUP.md"
+      ]
+    },
+    "rtl-memory": {
+      "owner_role": "Memory and data movement",
+      "status": "scaffold",
+      "required_files": [
+        "README.md",
+        "Makefile",
+        "CHARTER.md",
+        "OBJECTIVES.md",
+        "SETUP.md"
+      ]
+    },
+    "rtl-control": {
+      "owner_role": "Execution control and scheduling",
+      "status": "scaffold",
+      "required_files": [
+        "README.md",
+        "Makefile",
+        "CHARTER.md",
+        "OBJECTIVES.md",
+        "SETUP.md"
+      ]
+    },
+    "soc": {
+      "owner_role": "SoC composition and system interfaces",
+      "status": "scaffold",
+      "required_files": [
+        "README.md",
+        "Makefile",
+        "CHARTER.md",
+        "OBJECTIVES.md",
+        "SETUP.md"
+      ]
+    },
+    "ml-compiler": {
+      "owner_role": "ML compiler and runtime",
+      "status": "scaffold",
+      "required_files": [
+        "README.md",
+        "Makefile",
+        "CHARTER.md",
+        "OBJECTIVES.md",
+        "SETUP.md"
+      ]
+    },
+    "ml-models": {
+      "owner_role": "ML models, workloads and numerical methods",
+      "status": "working-starter",
+      "required_files": [
+        "README.md",
+        "Makefile",
+        "reference.py",
+        "generate_vectors.py",
+        "tests/test_reference.py",
+        "CHARTER.md",
+        "OBJECTIVES.md",
+        "SETUP.md"
+      ]
+    },
+    "verification": {
+      "owner_role": "Verification and confidence in the design",
+      "status": "working-starter",
+      "required_files": [
+        "README.md",
+        "Makefile",
+        "run.py",
+        "tb/pe_mac_smoke_tb.sv",
+        "CHARTER.md",
+        "OBJECTIVES.md",
+        "SETUP.md"
+      ]
+    },
+    "fpga": {
+      "owner_role": "FPGA prototyping and hardware exploration",
+      "status": "scaffold",
+      "required_files": [
+        "README.md",
+        "Makefile",
+        "CHARTER.md",
+        "OBJECTIVES.md",
+        "SETUP.md"
+      ]
+    },
+    "physical-design": {
+      "owner_role": "Physical implementation and design feasibility",
+      "status": "scaffold",
+      "required_files": [
+        "README.md",
+        "Makefile",
+        "CHARTER.md",
+        "OBJECTIVES.md",
+        "SETUP.md"
+      ]
+    },
+    "accelerator": {
+      "owner_role": "System integration and shared project understanding",
+      "status": "working-starter",
+      "required_files": [
+        "README.md",
+        "Makefile",
+        "workspace.json",
+        "workspace.py",
+        "CHARTER.md",
+        "OBJECTIVES.md",
+        "SETUP.md"
+      ]
+    }
+  }
+}
