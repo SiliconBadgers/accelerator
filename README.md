@@ -1,5 +1,9 @@
 # System integration and shared project understanding
 
+## Start here: current investigation packet
+
+Read the [starting guide](docs/START-HERE.md) for the current diagram, source evidence, parallel investigations and first useful outputs.
+
 Help the separate teams form a coherent accelerator project and understand what the combined system can actually do. This repository holds the system-level context, integration knowledge and shared evidence that connect individual team contributions.
 
 ## Read the charter
