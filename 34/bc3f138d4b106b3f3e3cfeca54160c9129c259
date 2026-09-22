@@ -1,0 +1,31 @@
+workspace.py
+  s_a4fdefbacc4ddc::t_f5a97eaa11a1a5 31,36-37,45-46,59-64
+docs/PROJECT_LAYOUT.md
+  s_a4fdefbacc4ddc::t_f5a97eaa11a1a5 54,115
+docs/REPOSITORIES.md
+  s_a4fdefbacc4ddc::t_f5a97eaa11a1a5 3,17,45
+docs/TEAM_GUIDE.md
+  s_a4fdefbacc4ddc::t_f5a97eaa11a1a5 79,82
+workspace.json
+  s_a4fdefbacc4ddc::t_f5a97eaa11a1a5 63-64
+docs/GETTING_STARTED.md
+  s_a4fdefbacc4ddc::t_f5a97eaa11a1a5 11,17,27,33-37,41
+CHARTER.md
+  s_a4fdefbacc4ddc::t_f5a97eaa11a1a5 40-41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "34bc3f138d4b106b3f3e3cfeca54160c9129c259",
+  "prompts": {},
+  "sessions": {
+    "s_a4fdefbacc4ddc": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0c6c2-231a-7a30-bbf3-f68a9d08902d",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "abhinavnandwani <abhu.srt@gmail.com>"
+    }
+  }
+}
