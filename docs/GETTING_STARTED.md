@@ -8,13 +8,13 @@ charters, research and design documentation can be used without these tools.
 | Component | Existing material |
 |---|---|
 | architecture | [MAC contract](https://github.com/SiliconBadgers/architecture/blob/main/contracts/mac-v0.json) and a structural check |
-| ml-models | [Numerical reference](https://github.com/SiliconBadgers/ml-models/blob/main/reference.py), [unit tests](https://github.com/SiliconBadgers/ml-models/blob/main/tests/test_reference.py) and [vector generator](https://github.com/SiliconBadgers/ml-models/blob/main/generate_vectors.py) |
+| software | [Numerical reference](https://github.com/SiliconBadgers/software/blob/main/reference.py), [unit tests](https://github.com/SiliconBadgers/software/blob/main/tests/test_reference.py) and [vector generator](https://github.com/SiliconBadgers/software/blob/main/generate_vectors.py) |
 | rtl-compute | [Signed MAC RTL](https://github.com/SiliconBadgers/rtl-compute/blob/main/rtl/pe_mac.sv), with its original MIT attribution |
 | verification | [Independent testbench](https://github.com/SiliconBadgers/verification/blob/main/tb/pe_mac_smoke_tb.sv) and [runner](https://github.com/SiliconBadgers/verification/blob/main/run.py) |
 | accelerator | [Local manifest](https://github.com/SiliconBadgers/accelerator/blob/main/workspace.json) and [combined runner](https://github.com/SiliconBadgers/accelerator/blob/main/workspace.py) |
 
 The example uses signed INT8 operands and an INT32 accumulator with wraparound.
-Its contract describes this primitive only. The other six components provide
+Its contract describes this primitive only. The other four components provide
 charters and a documentation/implementation scaffold; runnable implementations
 are not supplied for them.
 
@@ -24,18 +24,21 @@ The repositories are private. Use a GitHub account with access to SiliconBadgers
 and an authenticated GitHub CLI. From a parent workspace directory:
 
 ```sh
-for repo in architecture rtl-compute rtl-memory rtl-control soc ml-compiler ml-models verification fpga physical-design accelerator; do
+for repo in architecture rtl-compute rtl-memory rtl-control soc software verification physical-design accelerator; do
   gh repo clone "SiliconBadgers/$repo"
 done
 ```
 
 This creates the folder names expected by the example. An existing checkout can
-be kept in place; clone only the siblings that are missing. The runner consumes
-the current checked-out files rather than selecting release commit pins.
+be kept in place; clone only the siblings that are missing. The runner prefers
+the `software` sibling folder and accepts an older `ml-models` folder when
+`software` is absent, so an existing checkout does not need to be renamed. The
+runner consumes the current checked-out files rather than selecting release
+commit pins.
 
 ## Run the example
 
-Keep all eleven component folders as siblings. Install or use an environment
+Keep all nine component folders as siblings. Install or use an environment
 with Make, Python 3.11+ and Icarus Verilog (`iverilog` and `vvp`). No Python
 packages are needed for the existing example.
 

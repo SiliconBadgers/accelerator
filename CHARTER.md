@@ -37,8 +37,8 @@ Members may investigate a system interaction, compare configurations, explain de
 | Partners | Shared concerns |
 |---|---|
 | architecture and all component teams | Connect intended behavior with actual capabilities and assumptions, and make incompatibilities visible to the teams able to resolve them. |
-| ml-models, ml-compiler and verification | Relate workload meaning, software use and independent evidence to combined-system behavior. |
-| fpga and physical-design | Interpret platform and implementation observations in their proper system context, including the limits of comparison between targets. |
+| software and verification | Relate workload meaning, software use and independent evidence to combined-system behavior. |
+| physical-design | Interpret platform and implementation observations in their proper system context, including the limits of comparison between targets. |
 
 ## Possible directions
 
