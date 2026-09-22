@@ -51,11 +51,7 @@ repo-starters/
   soc/
     rtl/  # reserved
     tb/  # reserved
-  ml-compiler/
-    examples/  # reserved
-    src/  # reserved
-    tests/  # reserved
-  ml-models/
+  software/
     fixtures/  # reserved
     tests/
       test_reference.py
@@ -67,11 +63,6 @@ repo-starters/
     tb/
       pe_mac_smoke_tb.sv
     run.py
-  fpga/
-    constraints/  # reserved
-    host/  # reserved
-    rtl/  # reserved
-    tb/  # reserved
   physical-design/
     constraints/  # reserved
     flows/  # reserved
@@ -121,5 +112,5 @@ through member-led work with the affected consumers kept in agreement.
 - [VALIDATION.md](VALIDATION.md) records the tested technical scope.
 - [PRIVACY-AUDIT.md](PRIVACY-AUDIT.md) records the content-review scope and attribution exception.
 
-The eleven components are private organization repositories. The structure
+The nine components are private organization repositories. The structure
 prescribes no assigned backlog or fixed first milestone.

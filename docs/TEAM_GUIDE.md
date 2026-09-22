@@ -76,10 +76,10 @@ These roles do not create a hierarchy that assigns individual work across teams.
 
 | Boundary | Shared understanding |
 |---|---|
-| Architecture, ml-models and ml-compiler | Intended computations, representations, programming needs and system assumptions |
+| Architecture and software | Intended computations, representations, programming needs and system assumptions |
 | Compute, memory and control | Arithmetic behavior, operand access, operation requests and progress |
 | Control and SoC | Execution sequencing versus host access and hardware composition |
-| SoC, software and FPGA | Reusable system behavior versus host interaction and board adaptation |
+| SoC and software | Reusable system behavior versus host interaction |
 | Verification and design teams | Intended behavior, evidence supporting a claim and remaining uncertainty |
 | Physical-design and design teams | Implementation assumptions, physical costs and interpreted feedback |
 | Accelerator and all teams | What the combined system means, what has been demonstrated and which assumptions connect it |

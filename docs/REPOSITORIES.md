@@ -1,6 +1,6 @@
 # SiliconBadgers team repositories
 
-These eleven repositories are homes for team charters, shared understanding and
+These nine repositories are homes for team charters, shared understanding and
 member-directed work on the accelerator project. Each explains why its team
 exists, the outcomes it seeks and how its responsibilities connect to other
 teams. Members decide what to investigate or build within that purpose.
@@ -14,10 +14,8 @@ teams. Members decide what to investigate or build within that purpose.
 | [rtl-memory](https://github.com/SiliconBadgers/rtl-memory/blob/main/CHARTER.md) | Storage, access and data movement that serve the workload |
 | [rtl-control](https://github.com/SiliconBadgers/rtl-control/blob/main/CHARTER.md) | Understandable execution, scheduling, coordination and progress |
 | [soc](https://github.com/SiliconBadgers/soc/blob/main/CHARTER.md) | Coherent hardware composition and host-visible system behavior |
-| [ml-compiler](https://github.com/SiliconBadgers/ml-compiler/blob/main/CHARTER.md) | Programming models and software paths to useful accelerator work |
-| [ml-models](https://github.com/SiliconBadgers/ml-models/blob/main/CHARTER.md) | Meaningful workloads and trustworthy numerical understanding |
+| [software](https://github.com/SiliconBadgers/software/blob/main/CHARTER.md) | Workload profiling, numerical references, operation mapping, backend/runtime and host integration |
 | [verification](https://github.com/SiliconBadgers/verification/blob/main/CHARTER.md) | Justified confidence in design claims and visible uncertainty |
-| [fpga](https://github.com/SiliconBadgers/fpga/blob/main/CHARTER.md) | Physical prototyping, platform exploration and hardware learning |
 | [physical-design](https://github.com/SiliconBadgers/physical-design/blob/main/CHARTER.md) | Physical feasibility and implementation tradeoffs |
 | [accelerator](https://github.com/SiliconBadgers/accelerator/blob/main/CHARTER.md) | Combined-system understanding, integration and shared evidence |
 
@@ -44,7 +42,7 @@ A working MAC example connects a small contract, Python reference, RTL,
 independent checks and an integration runner. It is available for learning and
 experimentation; it does not define the teams’ roadmap or the final accelerator.
 [Example setup and scope](GETTING_STARTED.md) describes what actually runs.
-Six components currently supply documentation and structure without component
+Four components currently supply documentation and structure without component
 implementations. This is a statement about available code, not team progress.
 
 ## Repositories and workspace
