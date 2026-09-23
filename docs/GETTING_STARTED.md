@@ -20,8 +20,9 @@ are not supplied for them.
 
 ## Obtain the sibling repositories
 
-The repositories are private. Use a GitHub account with access to SiliconBadgers
-and an authenticated GitHub CLI. From a parent workspace directory:
+The ten core repositories are public. Use an authenticated GitHub CLI for this
+checkout command; accept your organization invitation for branch push access.
+From a parent workspace directory:
 
 ```sh
 for repo in architecture rtl-compute rtl-memory rtl-control soc software verification physical-design accelerator; do
@@ -35,6 +36,10 @@ the `software` sibling folder and accepts an older `ml-models` folder when
 `software` is absent, so an existing checkout does not need to be renamed. The
 runner consumes the current checked-out files rather than selecting release
 commit pins.
+
+Before AI-assisted edits or your first commit, follow each clone's
+`docs/git-ai.md` and activate its local commit guard. Installation is per
+machine; repository hook activation is per clone.
 
 ## Run the example
 

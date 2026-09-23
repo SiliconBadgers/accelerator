@@ -1,59 +1,25 @@
-# SiliconBadgers team repositories
+# Repositories and current teams
 
-These nine repositories are homes for team charters, shared understanding and
-member-directed work on the accelerator project. Each explains why its team
-exists, the outcomes it seeks and how its responsibilities connect to other
-teams. Members decide what to investigate or build within that purpose.
+| Team | Repositories / issues | Current deliverable |
+|---|---|---|
+| Software | [software#3](https://github.com/SiliconBadgers/software/issues/3) | Extend llama.cpp profiling and recommend boundaries from evidence. |
+| Compute1 | [rtl-compute#2](https://github.com/SiliconBadgers/rtl-compute/issues/2) | Independent full compute-unit proposal in research/compute1/. |
+| Compute2 | [rtl-compute#2](https://github.com/SiliconBadgers/rtl-compute/issues/2) | Independent full compute-unit proposal in research/compute2/. |
+| Top-Level Control | [rtl-control#2](https://github.com/SiliconBadgers/rtl-control/issues/2), [architecture#3](https://github.com/SiliconBadgers/architecture/issues/3) | Controller diagram/walkthrough here; MMIO and descriptor proposal in architecture#3. |
+| Memory Control | [rtl-memory#2](https://github.com/SiliconBadgers/rtl-memory/issues/2) | Memory-controller diagram, interfaces and load-compute-store walkthrough. |
+| Verification | [verification#2](https://github.com/SiliconBadgers/verification/issues/2), [verification#3](https://github.com/SiliconBadgers/verification/issues/3), [verification#4](https://github.com/SiliconBadgers/verification/issues/4) | Test plan, per-layer methodology and hardened Synopsys unit/integration pilots. |
+| Synthesis / Physical Design | [physical-design#2](https://github.com/SiliconBadgers/physical-design/issues/2), [physical-design#3](https://github.com/SiliconBadgers/physical-design/issues/3) | One Synopsys chip baseline and synthesis coverage for every unit, with stubs. |
 
-## Start with the team
+Compute1 and Compute2 produce independent full proposals in rtl-compute.
+Top-Level Control works in both rtl-control and architecture. Architecture owns
+the [shared diagram](https://github.com/SiliconBadgers/architecture/blob/main/docs/accelerator-diagram.md) and shared contracts. `soc`, `accelerator` and
+`planning` are supporting repositories, not additional active team assignments.
 
-| Repository | Charter focus |
-|---|---|
-| [architecture](https://github.com/SiliconBadgers/architecture/blob/main/CHARTER.md) | Coherent system purpose, shared semantics and informed architectural choices |
-| [rtl-compute](https://github.com/SiliconBadgers/rtl-compute/blob/main/CHARTER.md) | Useful arithmetic capabilities and understood compute tradeoffs |
-| [rtl-memory](https://github.com/SiliconBadgers/rtl-memory/blob/main/CHARTER.md) | Storage, access and data movement that serve the workload |
-| [rtl-control](https://github.com/SiliconBadgers/rtl-control/blob/main/CHARTER.md) | Understandable execution, scheduling, coordination and progress |
-| [soc](https://github.com/SiliconBadgers/soc/blob/main/CHARTER.md) | Coherent hardware composition and host-visible system behavior |
-| [software](https://github.com/SiliconBadgers/software/blob/main/CHARTER.md) | Workload profiling, numerical references, operation mapping, backend/runtime and host integration |
-| [verification](https://github.com/SiliconBadgers/verification/blob/main/CHARTER.md) | Justified confidence in design claims and visible uncertainty |
-| [physical-design](https://github.com/SiliconBadgers/physical-design/blob/main/CHARTER.md) | Physical feasibility and implementation tradeoffs |
-| [accelerator](https://github.com/SiliconBadgers/accelerator/blob/main/CHARTER.md) | Combined-system understanding, integration and shared evidence |
+All ten core repositories are public. Accept an invitation for write access,
+complete the repo's AI setup before editing/committing, and use branches/PRs for
+@abhinavnandwani's review. Main requires one code-owner approval with admin bypass.
 
-Each team has a detailed `CHARTER.md`, high-level `OBJECTIVES.md` and a scaffold
-for research, design, experiments and implementation. The RTL teams own hardware
-blocks; other teams contribute across those blocks. These boundaries help
-members collaborate while preserving clear ownership of shared work.
-
-## Working from the charter
-
-[The team guide](TEAM_GUIDE.md) explains member autonomy, the role of leads and
-how teams coordinate shared decisions. Objectives describe enduring outcomes.
-Members choose the questions, approaches and contribution formats that advance
-them. A literature study, design explanation, experiment, prototype, useful
-implementation or teaching resource can all be worthwhile contributions.
-
-[The project layout](PROJECT_LAYOUT.md) explains where that work can live. Teams
-can adapt the structure as their interests and contributions develop. There is
-no assigned implementation backlog or predetermined first system milestone.
-
-## Optional technical material
-
-A working MAC example connects a small contract, Python reference, RTL,
-independent checks and an integration runner. It is available for learning and
-experimentation; it does not define the teams’ roadmap or the final accelerator.
-[Example setup and scope](GETTING_STARTED.md) describes what actually runs.
-Four components currently supply documentation and structure without component
-implementations. This is a statement about available code, not team progress.
-
-## Repositories and workspace
-
-Each component is a private repository in the SiliconBadgers organization. The
-initial publication contains one commit per repository with the reviewed charter
-and scaffold. Draft iterations and source-reference history are not imported.
-Keep checkouts as siblings when using the optional example. The
-[workspace manifest](https://github.com/SiliconBadgers/accelerator/blob/main/workspace.json) describes the current files used
-by that example. Shared guides are maintained in the accelerator repository.
-
-[Validation results](VALIDATION.md) describe the checked technical scope.
-[The content audit](PRIVACY-AUDIT.md) describes the privacy review and retained
-source attribution.
+See [the maintained team map](https://github.com/SiliconBadgers/planning/blob/main/docs/team-start.md),
+[contribution instructions](../CONTRIBUTING.md), and
+[the existing MAC example setup](GETTING_STARTED.md). The example is not the
+accelerator roadmap and does not define a custom CPU or ISA.

@@ -1,5 +1,9 @@
 # System integration and shared project understanding: team charter
 
+Current assignments are listed in [docs/START-HERE.md](docs/START-HERE.md) and
+the linked issues. The broader directions below provide context; they do not
+replace those deliverables.
+
 ## Purpose
 
 Help the separate teams form a coherent accelerator project and understand what the combined system can actually do. This repository holds the system-level context, integration knowledge and shared evidence that connect individual team contributions.
