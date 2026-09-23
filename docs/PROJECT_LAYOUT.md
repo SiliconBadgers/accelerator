@@ -106,11 +106,12 @@ through member-led work with the affected consumers kept in agreement.
 
 ## Shared workspace documents
 
-- [README.md](REPOSITORIES.md) is the charter index.
-- [TEAM_GUIDE.md](TEAM_GUIDE.md) explains autonomy, lead stewardship and collaboration.
+- [Repository map](REPOSITORIES.md) connects the seven current teams to their repos and issues.
+- [TEAM_GUIDE.md](TEAM_GUIDE.md) explains the current contribution workflow.
 - [GETTING_STARTED.md](GETTING_STARTED.md) describes the optional MAC example.
 - [VALIDATION.md](VALIDATION.md) records the tested technical scope.
 - [PRIVACY-AUDIT.md](PRIVACY-AUDIT.md) records the content-review scope and attribution exception.
 
-The nine components are private organization repositories. The structure
-prescribes no assigned backlog or fixed first milestone.
+The nine component repositories and the separate planning repository are public.
+Current deliverables are specified in each repo's starting guide and linked
+issues. Historical charters and example layouts supply broader context.

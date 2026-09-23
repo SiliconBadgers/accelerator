@@ -1,44 +1,29 @@
-# Cross-repository integration starting material
+# Cross-repository integration: current work
 
-September 22, 2026. Initial investigations for team discussion; no personal assignments or deadlines.
+Provide the repository map and optional integration runner. Current work is assigned to seven teams; this repo supports their shared context and later integration.
 
-## Shared starting points
+## Assignment
 
-- [Editable architecture diagram](https://github.com/SiliconBadgers/architecture/blob/main/docs/accelerator-diagram.md) and [candidate boundaries](https://github.com/SiliconBadgers/architecture/blob/main/contracts/accelerator-boundaries.md).
-- [Workload cases and source shapes](https://github.com/SiliconBadgers/architecture/blob/main/docs/workload-cases.md).
-- [Measured llama.cpp report](https://github.com/SiliconBadgers/software/blob/main/experiments/llama-cpp/2026-09-22/REPORT.md) and [reproduction procedure](https://github.com/SiliconBadgers/software/blob/main/experiments/llama-cpp/2026-09-22/README.md).
-- [Parallel team investigations](https://github.com/SiliconBadgers/planning/blob/main/docs/team-start.md).
+No additional team assignment is created here. Support the [current seven-team work](https://github.com/SiliconBadgers/planning/blob/main/docs/team-start.md).
 
-The diagram and engine split are proposals. Start from available shapes and
-reference cases now; use explicit parameters or stubs where decisions remain
-open. Software's broader profiling study is not a prerequisite. Preserve the
-source revision, assumptions, commands and limits of each result. Members and
-leads can choose a different investigation that resolves a relevant uncertainty.
+1. Use the team map and each repo's current issue links. Architecture owns the main diagram and shared contracts; Software owns recorded workload evidence.
+2. Keep the existing MAC integration runner and its scope clear. A passing example does not validate the proposed full accelerator.
+3. When integrating new components, record compatible revisions, configuration, real/stub status, commands and cross-boundary evidence.
+
+## Starting evidence
+
+- [Central diagram](https://github.com/SiliconBadgers/architecture/blob/main/docs/accelerator-diagram.md)
+- [Recorded Software profiling package](https://github.com/SiliconBadgers/software/tree/main/experiments/llama-cpp/2026-09-22)
+
+## Artifact locations
+
+| Location | What belongs here |
+|---|---|
+| [docs/integration/](../docs/integration/README.md) | Revision manifests and reproducible combined-system evidence. Keep authoritative diagrams, RTL and recorded profiles in their owning repositories. |
+
+## What runs today
+
+The existing workspace runner connects the small MAC example. No full accelerator implementation or end-to-end workload result is supplied.
 
 
-## First useful output
-
-A runnable model/stub walkthrough of one agreed workload slice, with an explicit
-inventory of real implementations versus stubs. Connect command acceptance,
-operand transfer, compute completion, write retirement and host-visible status.
-This is integration evidence, not a claim of full-model inference.
-
-## Procedure
-
-1. Use the shared workload cases and candidate boundaries to choose a small matrix or stateful slice. Record all component revisions.
-2. Compose Control's scheduler model, Memory's latency/ownership model and Compute/Verification reference behavior where available. Use declared stubs otherwise.
-3. Exercise a successful command, backpressure and an outstanding-transfer fault. Preserve the traces and acceptance/completion definitions.
-4. Track mismatched assumptions in a short table: boundary, producer claim, consumer expectation, consequence and owners. Do not centralize copies of component source here.
-5. Publish what was actually exercised and what remains unimplemented, linking each team's evidence.
-
-## Existing complete example
-
-Follow [GETTING_STARTED.md](GETTING_STARTED.md) to clone the nine component
-repositories into the documented sibling layout and run the existing workspace
-command. That path tests the small MAC example. It does not exercise the proposed
-command, memory, SoC or full-model architecture. The runner prefers `software`
-and supports legacy `ml-models` directories only when `software` is absent.
-
-Keep the shared review focused on compatible assumptions and the next useful
-integration slice. Teams can develop independent models and probes in parallel;
-there is no universal wait for Software or complete RTL.
+Follow [CONTRIBUTING.md](../CONTRIBUTING.md) before editing or committing.
