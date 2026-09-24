@@ -1,0 +1,25 @@
+AGENTS.md
+  s_a4fdefbacc4ddc::t_54928cfe5ed9c3 8-9,13-18
+CONTRIBUTING.md
+  s_a4fdefbacc4ddc::t_aa783a5e20ca11 18
+README.md
+  s_a4fdefbacc4ddc::t_772943e0148a72 8
+docs/TEAM_GUIDE.md
+  s_a4fdefbacc4ddc::t_6f26bb6934d77a 17-19
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "3337420c3df779093c6500fa02bff80233f469b5",
+  "prompts": {},
+  "sessions": {
+    "s_a4fdefbacc4ddc": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0c6c2-231a-7a30-bbf3-f68a9d08902d",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "abhinavnandwani <abhu.srt@gmail.com>"
+    }
+  }
+}
