@@ -14,6 +14,6 @@ explicit assumptions about sizes, latencies and unfinished units. Keep the main
 diagram and shared register contract in architecture and reference those sources.
 Label real implementations, proposals, models and stubs accurately.
 
-Read [CONTRIBUTING.md](../CONTRIBUTING.md) and activate the AI commit guard before
-work. Open a branch and PR for review with reproducible evidence. Existing charters
-describe long-term purpose; current issues specify the work assigned now.
+Read [CONTRIBUTING.md](../CONTRIBUTING.md). Open a branch and PR for review with
+reproducible evidence. Existing charters describe long-term purpose; current
+issues specify the work assigned now.

@@ -37,10 +37,6 @@ the `software` sibling folder and accepts an older `ml-models` folder when
 runner consumes the current checked-out files rather than selecting release
 commit pins.
 
-Before AI-assisted edits or your first commit, follow each clone's
-`docs/git-ai.md` and activate its local commit guard. Installation is per
-machine; repository hook activation is per clone.
-
 ## Run the example
 
 Keep all nine component folders as siblings. Install or use an environment
